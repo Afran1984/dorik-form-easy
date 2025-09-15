@@ -1,4 +1,6 @@
 import React from "react";
+import { useDrag, useDrop } from "react-dnd";
+import FieldRenderer from "./FieldRenderer";
 
 interface BuilderCanvasProps {
   formSchema: any;
@@ -77,7 +79,8 @@ const BuilderCanvas: React.FC<BuilderCanvasProps> = ({
             </div>
           )}
 
-          
+          {/* Field Renderer */}
+          <FieldRenderer field={field} previewMode={previewMode} />
         </div>
       ))}
     </div>
