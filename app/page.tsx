@@ -1,9 +1,11 @@
+"use client";
 import { useState } from "react";
 import Topbar from "../components/Topbar";
 import FieldPalette from "../components/FieldPalette";
 import BuilderCanvas from "../components/BuilderCanvas";
 import SettingsSidebar from "../components/SettingsSidebar";
-import schemaData from "../utils/schemaData"; 
+import schemaData from "@/utils/schema";
+
 
 export default function Home() {
   // ফর্মের state
