@@ -1,11 +1,21 @@
+import BuilderCanvas from "@/components/BuilderCanvas";
+import FieldPalette from "@/components/FieldPalette";
 import Topbar from "@/components/Topbar";
-import Image from "next/image";
 
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-screen">
-      <Topbar/>    
+    <div className="min-h-screen bg-gray-50">
+      {/* Top Navigation Bar */}
+      <Topbar />
+
+      <div className="p-6">
+        {/* Left Sidebar / Field Palette */}
+        <FieldPalette/>
+      </div>
+      <div>
+        <BuilderCanvas/>
+      </div>
     </div>
   );
 }
